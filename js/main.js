@@ -1,5 +1,3 @@
-// Captions
-
 var captions = [
 	'I love hay bales. Took this snap on a drive through the countryside past some straw fields.',
 	'The lake was so calm today. We had a great view of the snow on the mountains from here.',
@@ -15,10 +13,10 @@ var captions = [
 	'I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.'
 ];
 
-//add captions to each
+//adding captions to html
 $(document).ready(function(){
 	$('.grid_image a').each(function(index){
-		if($('a[href^="photo"]')){
+		if($('a[href^="images"]')){
 			$(this).attr('data-lightbox','roadtrip');
 			console.log("Attribute added");
 			$(this).attr('data-title', captions[index]);
@@ -27,4 +25,14 @@ $(document).ready(function(){
 	});
 });
 
-    
+
+//search box funtion
+$('input').keyup(function() {
+	var value = $(this).val();
+	var exp = new RegExp(value, 'i');
+	$('.grid_image a').each(function() {
+		var isMatch = exp.test($(this).data('title'));
+		$(this).parent().toggle(isMatch);
+		console.log(isMatch);
+	});
+});

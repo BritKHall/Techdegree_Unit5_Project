@@ -4,7 +4,9 @@
 
 .grid {
 background-image:linear-gradient( rgba(220, 233, 231, 0.699), rgba(228, 220, 203, 0.753));
-border-top: 1px solid
+border-top: 1px solid;
+border-bottom: 1px solid;
+margin: 0 auto;
 }
 
 /*---------- search------------ */
@@ -67,6 +69,10 @@ input:focus::placeholder {
 	text-align: center;	
     align-self: center;
     padding-top:15px;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: lobster;
+    text-shadow: 1px 1px 2px rgb(81, 189, 104);
 }
 
 /*===============clearfix========================*/

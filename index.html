@@ -8,9 +8,10 @@
 
 <!-- links for css -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="plugins/lightbox/css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Philosophe|Satisfy" rel="stylesheet">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Lobster&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -23,82 +24,82 @@
 
     <!--============================Search end=======================================-->
 
-<main id=grid class=grid>
+
+    <main id=grid class=grid>
         
-    <div class="container clearfix">
-       
-        <!--============================Photos=============================================-->
-        <div class="grid-img">
-            <a href="images/01.jpg">
-                <img src="images/thumbnails/01_thumb.jpg" alt="Hay Bales" class="thumb"/>
-            </a>
-         </div>
-
-        <div class="grid-img">
-            <a href="images/02.jpg">
-                <img src="images/thumbnails/02_thumb.jpg" alt="Lake" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/03.jpg">
-                <img src="images/thumbnails/03_thumb.jpg" alt="Canyon" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/04.jpg">
-                <img src="images/thumbnails/04_thumb.jpg" alt="Iceburg" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/05.jpg">
-                <img src="images/thumbnails/05_thumb.jpg" alt="Desert" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/06.jpg">
-                <img src="images/thumbnails/06_thumb.jpg" alt="Fall" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/07.jpg">        
-                <img src="images/thumbnails/07_thumb.jpg" alt="Plantation" class="thumb"/>
-            </a>
-        </div>
-
-        <div class="grid-img">
-            <a href="images/08.jpg">    
-                <img src="images/thumbnails/08_thumb.jpg" alt="Dunes" class="thumb"/>
-            </a>   
-        </div>
+        <div class="container clearfix">
+           
+            <div class="grid_image"> 
+                    <a href="images/01.jpg"> 
+                        <img src="images/thumbnails/01_thumb.jpg" alt="Hay Bales" class="thumb">
+                    </a>
+            </div>
+           
+             <div class="grid_image"> 
+                    <a href="images/02.jpg"> 
+                        <img src="images/thumbnails/02_thumb.jpg" alt="Hay Bales" class="thumb">
+                    </a>
+            </div>
         
-        <div class="grid-img">
-            <a href="images/09.jpg">
-                <img src="images/thumbnails/09_thumb.jpg" alt="Countryside Lane" class="thumb"/>
-            </a>   
-        </div> 
-        
-        <div class="grid-img">
-            <a href="images/10.jpg">
-                <img src="images/thumbnails/10_thumb.jpg" alt="Sunset" class="thumb"/>
-            </a>   
-        </div>
-
-        <div class="grid-img">
-            <a href="images/11.jpg">
-                <img src="images/thumbnails/11_thumb.jpg" alt="Cave" class="thumb"/>
-            </a> 
-        </div>
-
-        <div id="grid-img">
-            <a href="images/12.jpg">
-                <img src="images/thumbnails/12_thumb.jpg" alt="Bluebells" class="thumb"/>
-            </a>   
-        </div>
+            <div class="grid_image"> 
+                    <a href="images/03.jpg"> 
+                        <img src="images/thumbnails/03_thumb.jpg" alt="Hay Bales" class="thumb">
+                    </a>
+            </div>
+           
+            <div class="grid_image"> 
+                    <a href="images/04.jpg"> 
+                        <img src="images/thumbnails/04_thumb.jpg" alt="Hay Bales" class="thumb">
+                    </a>
+            </div>      
+            
+            <div class="grid_image"> 
+                <a href="images/05.jpg"> 
+                    <img src="images/thumbnails/05_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>  
+            
+            <div class="grid_image"> 
+                <a href="images/06.jpg"> 
+                    <img src="images/thumbnails/06_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+      
+            <div class="grid_image"> 
+                <a href="images/07.jpg"> 
+                    <img src="images/thumbnails/07_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+      
+            <div class="grid_image"> 
+                <a href="images/08.jpg"> 
+                    <img src="images/thumbnails/08_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+      
+            <div class="grid_image"> 
+                <a href="images/09.jpg"> 
+                    <img src="images/thumbnails/09_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+    
+            <div class="grid_image"> 
+                <a href="images/10.jpg"> 
+                    <img src="images/thumbnails/10_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+     
+            <div class="grid_image"> 
+                <a href="images/11.jpg"> 
+                    <img src="images/thumbnails/11_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
+      
+            <div class="grid_image"> 
+                <a href="images/12.jpg"> 
+                    <img src="images/thumbnails/12_thumb.jpg" alt="Hay Bales" class="thumb">
+                </a>
+            </div>      
 
          <!--============================Photos End=======================================-->
 
@@ -107,14 +108,15 @@
 
         <footer class="foot">
                 <div class="info">
-                    <p>Interactive Image Gallery</p>
+                    <p>My Interactive Image Gallery</p>
                 </div>
         </footer>
         
  <!--=========================JSCRIPS==============================-->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src=""></script>
+    <script src="plugins/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
+
     
 </body>
 </html>
