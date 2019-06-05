@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+background-image:linear-gradient( rgba(220, 233, 231, 0.699), rgba(228, 220, 203, 0.753));
+border-top: 1px solid
+}
+
+/*---------- search------------ */
+
+.search_bar {
+    margin: 30px auto;    
+    text-align: center;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+input {
+    transition: width 0.6s ease-in-out;   
+    width: 40vw;
+    padding: 5px;
+    font-size: calc(16px + 1vw);
+    border-radius: 20px;
+    border-style: none;
+    border: 3px solid rgb(204, 202, 199);
+    background-image: linear-gradient( rgba(228, 220, 203, 0.753),rgba(220, 233, 231, 0.699));
+  }
+
+  
+input:focus {
+   width: 50vw;
+   outline: 0;
+  }
+
+  input::placeholder {
+    font-family: lobster;
+    text-align: center;
+    transition: 0.5s;
+}
+
+input:focus::placeholder {
+	color: rgb(175, 174, 174);
+    font-size: 15px;
+}
+
+/* ---------Images------------- */
+
+.thumb{ 
+    width: 75%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+} 
+
+.thumb:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.404);
+}
+
+
+.info {
+
+	text-align: center;	
+    align-self: center;
+    padding-top:15px;
+}
+
+/*===============clearfix========================*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  /* -================-Media Q-====================================- */
+  
+
+@media (min-width: 600px){
+
+    .thumb{ 
+        float: left;
+        width: 50%;
+        
+    } 
+
+    .container {
+        width: 90%;
+        margin: auto; 
+    }
+  }
+
+  @media (min-width: 950px) {
+
+    .container {
+        width: 90%;
+        margin: auto; 
+    }
+
+    .thumb{ 
+        float: left;
+        width: 25%;
+        padding: 20px;
+    }
+
+  }
