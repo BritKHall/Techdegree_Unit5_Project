@@ -28,6 +28,3 @@ $(document).ready(function(){
 });
 
     
-    $('.grid').lightGallery({
-        thumbnail:true
-    }); 
